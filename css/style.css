@@ -10,12 +10,10 @@ h1, h2 {
     text-shadow: 2px 2px red;
 }
 
-nav img {
-    width: 15vh;
-}
-
-img {
-    width: 40vh;
+a {
+    /* couleur du texte en noir et on enlève le soulignage des liens */
+    color: black;
+    text-decoration: none;
 }
 
 .bg-primary {
@@ -32,46 +30,56 @@ nav section {
     width: 50%;
 }
 
-#formhelp {
-    /* Formulaire qui prend 50% de longueur de la fenêtre et un léger décalage vers la droite */
-    width: 50%;
-    margin-left: 3%;
+.help {
+    /* Ajustement des marges intérieures des textes de la section avec le formulaire */
+    color: azure;
+    padding: 15px 20% 15px 20%;
 }
 
+#formhelp {
+    /* Formulaire avec 20% de marge à gauche et à droite */
+    margin: 0% 20% 0% 20%;
+}
 
 
 @media screen and (max-width: 768px) {
 
     main section {
         /* chaque article à la ligne en passant en version mobile */
-        display: wrap;
-        flex-wrap: wrap;
+        display: flex;
+        flex-wrap: wrap; /* Permet de répartir les articles sur plusieurs lignes si l'espace est limité */
     } 
 
+    /* Navigation principale */
     nav {
-        display: wrap;
+        /* Même principe que pour main section */
+        display: flex;
         flex-wrap: wrap;
-        text-align: center;
+        text-align: center; /* Centrage horizontal du texte */
     }
 
     nav section {
-        /* Etirement barre de recherche */
+        /* Étirement de la barre de recherche sur toute la largeur */
         width: 100%;
     }
 
     nav img {
-        /* Centrage logo du site */
-        margin: 0 auto;
+        margin: 0 auto; /* Centrage horizontal du logo du site */
     }
 
     nav ul {
         /* Centrage des textes de la nav */
-        width: 100%;
+        width: 100%; /* Assure que la liste occupe toute la largeur du conteneur */
     }
 
+    .help {
+        /* Ajustement des marges intérieures des textes de la section avec le formulaire */
+        color: azure;
+        padding: 15px 5% 15px 5%;
+    }
+    
     #formhelp {
-        /* Formulaire qui prend 100% de longueur de la fenêtre */
-        width: 100%;
-        margin-left: 0%;
+        /* Réajustement formulaire avec moins de marges sur les côtés */
+        margin: 0% 5% 0% 5%; /* Marges externes : aucun espace en haut/bas, 5% à gauche/droite */
     }
 }
