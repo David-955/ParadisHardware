@@ -7,6 +7,6 @@ Pour avoir un aperçu du site, celui-ci est hébergé ici : https://david-955.gi
 
 Des suggestions ou questions ?
 
-Contactez-moi : https://portfolio-david-ngo.fr/
+Contactez-moi : https://ngo-portfolio.fr/
 
 Cordialement.
